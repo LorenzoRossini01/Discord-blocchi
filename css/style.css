@@ -169,7 +169,7 @@ main > section,
 }
 
 main > section:nth-of-type(even) {
-  background-color: #d3d3d3;
+  background-color: #f6f6f6;
 }
 
 main > section:nth-of-type(odd) {
@@ -227,33 +227,150 @@ main > .container > .download {
 
 .download {
   width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-around;
+  background-image: url("../img/stars.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 875px;
+
   /* debug */
-  height: 800px;
-  background-color: #228b22;
-  border: 2px dashed black;
+  /* height: 800px; */
+  /* background-color: #228b22; */
+  /* border: 2px dashed black; */
+}
+
+.download-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.download h2 {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+.download p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.download h3 {
+  font-size: 2rem;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.big-section-download {
+  background-color: #8ea1e1;
+  border-radius: 1.5rem;
+  width: 175px;
+  height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.big-section-download:hover {
+  background-color: #768fe3;
+  cursor: pointer;
+}
+
+.big-section-download:before {
+  content: "\2B07";
+  font-weight: bolder;
+  padding-right: 0.5rem;
 }
 
 /* FOOTER */
 
 .footer {
   background-color: #23272a;
+  color: white;
+
   padding-top: 10px;
+}
+
+footer h2,
+footer h3 {
+  color: #7289da;
+  font-size: 2rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
 }
 
 .footer-top {
   display: flex;
+  padding-top: 70px;
+
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid #7289da;
 }
 
 .small-col {
   width: 30%;
 
   /* debug */
-  height: 500px;
+  /* height: 500px;
   background-color: #f08080;
-  border: 2px dashed black;
+  border: 2px dashed black; */
+}
+
+.small-col .lang {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+
+  /* debug */
+  /* border: 1px solid red; */
+}
+
+.lang img {
+  height: 1rem;
+}
+
+.small-col p::after {
+  content: "\2304";
+  padding-left: 5px;
+}
+
+footer ul {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.small-col ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer li {
+  padding-top: 10px;
+}
+
+footer li:hover {
+  cursor: pointer;
 }
 
 .big-col {
@@ -261,14 +378,23 @@ main > .container > .download {
   display: flex;
 
   /* debug */
-  height: 500px;
+  /* height: 500px;
   background-color: #20b2aa;
-  border: 2px dashed black;
+  border: 2px dashed black; */
 }
 
 .col-25 {
   width: 25%;
-  border: 2px dashed white;
+  /* border: 2px dashed white; */
+}
+
+.col-25 li {
+  font-weight: 100;
+}
+
+.col-25 li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer-bottom {
@@ -276,8 +402,8 @@ main > .container > .download {
   justify-content: space-between;
   align-items: center;
   /* debug */
-  height: 100px;
-  background-color: #7fffd4;
+  /* height: 100px; */
+  /* background-color: #7fffd4; */
 }
 
 .footer-bottom > .logo,
@@ -285,6 +411,25 @@ main > .container > .download {
   padding: 5px 10px;
 
   /* debug */
-  background-color: #ffb6c1;
-  border: 2px dashed black;
+  /* background-color: #ffb6c1;
+  border: 2px dashed black; */
+}
+
+.footer-logo img:hover {
+  cursor: pointer;
+}
+
+.footer-button {
+  background-color: #8ea1e1;
+  border-radius: 1.5rem;
+  height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.footer-button:hover {
+  background-color: #768fe3;
+  cursor: pointer;
 }
