@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 /* UTILS */
 .container {
@@ -13,6 +15,10 @@
 
   /* debug */
   /* border: 2px solid red; */
+}
+
+:root {
+  --text-color: white;
 }
 
 /* HEADER */
@@ -53,7 +59,7 @@
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   padding: 10px;
   font-size: 0.9rem;
 }
@@ -68,7 +74,7 @@ a {
 }
 
 .login {
-  background-color: #fff;
+  background-color: var(--text-color);
   border-radius: 1.5rem;
   padding: 10px 15px;
   color: #000;
@@ -80,6 +86,9 @@ a {
 
 /* JUMBTRON */
 .jumbotron {
+  background-image: url(../img/jumbo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   /* debug */
   background-color: #00008b;
 }
@@ -87,11 +96,70 @@ a {
 .jumbotron-content {
   width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
 
   /* debug */
-  background-color: #ee82ee;
-  height: 350px;
-  border: 2px dashed black;
+  /* background-color: #ee82ee; */
+  /* border: 2px dashed black; */
+}
+
+.jumbo-title {
+  font-size: 4rem;
+  color: var(--text-color);
+}
+
+.jumbo-text {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: var(--text-color);
+}
+
+.jumbo-button {
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.download-button {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  width: auto;
+  height: 50px;
+  padding: 0 15px;
+  color: #000;
+  line-height: 50px;
+}
+
+.download-button:hover {
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+
+.download-button:before {
+  content: "\2B07";
+  font-weight: bolder;
+  padding-right: 0.5rem;
+}
+
+.open-button {
+  background-color: black;
+  border-radius: 1.5rem;
+  width: auto;
+  height: 50px;
+  padding: 0 15px;
+  color: white;
+  line-height: 50px;
+}
+
+.open-button:hover {
+  background-color: #3b3b3b;
+  cursor: pointer;
 }
 
 /* ROW SECTION */
