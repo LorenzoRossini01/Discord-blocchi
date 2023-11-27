@@ -19,7 +19,7 @@
 .header {
   /* debug */
   min-height: 80px;
-  background-color: #add8e6;
+  background-color: #3161e0;
 }
 
 .header > .container {
@@ -34,17 +34,48 @@
   padding: 10px;
 
   /* debug */
-  background-color: #d9a41f;
-  border: 2px dashed black;
+  /* background-color: #d9a41f;
+  border: 2px dashed black; */
 }
 
+/* HEADER NAV */
 .header > .container > .header__nav {
   flex-grow: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER LOGIN */
 .header__login {
   text-align: end;
+}
+
+.login {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 10px 15px;
+  color: #000;
+}
+
+.login:hover {
+  background-color: #e4e4e4;
 }
 
 /* JUMBTRON */
