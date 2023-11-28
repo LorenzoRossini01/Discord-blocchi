@@ -8,7 +8,7 @@
 }
 /* UTILS */
 .container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   min-height: 100px;
@@ -89,8 +89,11 @@ a {
   background-image: url(../img/jumbo.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
+  min-height: 500px;
+
   /* debug */
-  background-color: #00008b;
+  /* background-color: #00008b; */
 }
 
 .jumbotron-content {
@@ -98,7 +101,6 @@ a {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   height: 350px;
 
@@ -109,13 +111,15 @@ a {
 
 .jumbo-title {
   font-size: 4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   color: var(--text-color);
 }
 
 .jumbo-text {
   text-align: center;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 2rem;
   color: var(--text-color);
 }
@@ -123,15 +127,16 @@ a {
 .jumbo-button {
   display: flex;
   gap: 30px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.download-button {
+.btn {
   background-color: #fff;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   width: auto;
   height: 50px;
-  padding: 0 15px;
+  padding: 0 30px;
   color: #000;
   line-height: 50px;
 }
@@ -149,12 +154,7 @@ a {
 
 .open-button {
   background-color: black;
-  border-radius: 1.5rem;
-  width: auto;
-  height: 50px;
-  padding: 0 15px;
   color: white;
-  line-height: 50px;
 }
 
 .open-button:hover {
@@ -278,13 +278,7 @@ main > .container > .download {
 
 .big-section-download {
   background-color: #8ea1e1;
-  border-radius: 1.5rem;
-  width: 175px;
-  height: 50px;
-  padding: 0 15px;
   color: #fff;
-  line-height: 50px;
-  text-align: center;
 }
 
 .big-section-download:hover {
@@ -319,7 +313,7 @@ main .wave-color:nth-of-type(even) {
 footer h2,
 footer h3 {
   color: #7289da;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 footer h3 {
@@ -329,6 +323,7 @@ footer h3 {
 .footer-top {
   display: flex;
   padding-top: 70px;
+  align-items: flex-start;
 
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -348,7 +343,7 @@ footer h3 {
   display: flex;
   gap: 10px;
   align-items: center;
-  padding-top: 20px;
+  margin-top: 1rem;
 
   /* debug */
   /* border: 1px solid red; */
