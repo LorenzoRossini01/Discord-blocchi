@@ -298,6 +298,15 @@ main > .container > .download {
   padding-right: 0.5rem;
 }
 
+.wave-color {
+  color: #f6f6f6;
+  display: flex;
+}
+
+main .wave-color:nth-of-type(even) {
+  transform: rotate(180deg);
+}
+
 /* FOOTER */
 
 .footer {
